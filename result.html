@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>高配当株スクリーニング結果</title>
+  <style>
+    body {
+      margin: 0;
+      background: #f5f6f8;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+      color: #1f2937;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: #111827;
+      color: white;
+      padding: 14px 16px;
+      z-index: 10;
+    }
+    header h1 {
+      font-size: 20px;
+      margin: 0 0 4px;
+    }
+    header p {
+      margin: 0;
+      font-size: 12px;
+      opacity: .8;
+    }
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 12px;
+    }
+    .summary {
+      background: white;
+      border-radius: 16px;
+      padding: 14px;
+      margin-bottom: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,.06);
+    }
+    .summary strong {
+      font-size: 22px;
+    }
+    .card {
+      background: white;
+      border-radius: 18px;
+      padding: 16px;
+      margin: 12px 0;
+      box-shadow: 0 4px 18px rgba(0,0,0,.08);
+      border-left: 7px solid #9ca3af;
+    }
+    .rank-a { border-left-color: #16a34a; }
+    .rank-b { border-left-color: #2563eb; }
+    .rank-c { border-left-color: #f59e0b; }
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: flex-start;
+    }
+    .code { font-size: 12px; color: #6b7280; }
+    h2 { margin: 3px 0; font-size: 21px; }
+    .sub { font-size: 12px; color: #6b7280; }
+    .badge {
+      white-space: nowrap;
+      border-radius: 999px;
+      padding: 7px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      background: #eef2ff;
+      color: #1e3a8a;
+    }
+    .scorebox {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin: 14px 0;
+    }
+    .scorebox div {
+      background: #f9fafb;
+      border-radius: 12px;
+      padding: 10px;
+      text-align: center;
+    }
+    .scorebox span {
+      display: block;
+      font-size: 11px;
+      color: #6b7280;
+    }
+    .scorebox strong { font-size: 22px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+    .grid div {
+      background: #f3f4f6;
+      border-radius: 12px;
+      padding: 9px 10px;
+    }
+    .grid span {
+      display: block;
+      font-size: 11px;
+      color: #6b7280;
+    }
+    .grid b { font-size: 16px; }
+    .reason {
+      margin-top: 12px;
+      background: #fffbeb;
+      border-radius: 12px;
+      padding: 10px 12px;
+    }
+    .reason h3 {
+      margin: 0 0 6px;
+      font-size: 14px;
+    }
+    .reason ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .reason li {
+      margin: 3px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>高配当株スクリーニング結果</h1>
+    <p>作成日時: 2026-04-29 01:20</p>
+  </header>
+  <main>
+    <div class="summary">
+      表示対象: <strong>19</strong>件 / 全銘柄: 65件<br>
+      A候補: 9件　
+      B候補: 10件
+    </div>
+    
+        <section class="card rank-a">
+          <div class="topline">
+            <div>
+              <div class="code">7272 / 7272.T</div>
+              <h2>ヤマハ発動機</h2>
+              <div class="sub">プライム（内国株式）｜輸送用機器｜TOPIX Mid400</div>
+            </div>
+            <div class="badge">A:本命候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>155.00</strong></div>
+            <div><span>加点</span><strong>155.00</strong></div>
+            <div><span>危険減点</span><strong>0.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>1,093.50</b></div>
+            <div><span>配当利回り</span><b>4.57%</b></div>
+            <div><span>PER</span><b>6.81</b></div>
+            <div><span>PBR</span><b>0.94</b></div>
+            <div><span>PER×PBR</span><b>6.38</b></div>
+            <div><span>EV/EBITDA</span><b>8.96</b></div>
+            <div><span>25日乖離</span><b>-4.66%</b></div>
+            <div><span>52週高値</span><b>1,279.00</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>高配当4.5%以上</li><li>PER10倍以下で割安</li><li>PBR1倍以下</li><li>PER×PBRが15以下</li><li>EV</li><li>EBITDA10倍以下</li><li>時価総額1000億円以上</li><li>25日線下回りで押し目</li><li>75日線下回り</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-a">
+          <div class="topline">
+            <div>
+              <div class="code">7246 / 7246.T</div>
+              <h2>プレス工業</h2>
+              <div class="sub">プライム（内国株式）｜輸送用機器｜TOPIX Small 1</div>
+            </div>
+            <div class="badge">A:本命候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>130.00</strong></div>
+            <div><span>加点</span><strong>130.00</strong></div>
+            <div><span>危険減点</span><strong>0.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>793.00</b></div>
+            <div><span>配当利回り</span><b>4.79%</b></div>
+            <div><span>PER</span><b>13.57</b></div>
+            <div><span>PBR</span><b>0.67</b></div>
+            <div><span>PER×PBR</span><b>9.13</b></div>
+            <div><span>EV/EBITDA</span><b>3.02</b></div>
+            <div><span>25日乖離</span><b>-3.25%</b></div>
+            <div><span>52週高値</span><b>1,006.00</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>高配当4.5%以上</li><li>PBR1倍以下</li><li>PER×PBRが15以下</li><li>EV</li><li>EBITDA10倍以下</li><li>25日線下回りで押し目</li><li>75日線下回り</li><li>52週高値から20%以上下落</li><li>52週安値から反発</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-a">
+          <div class="topline">
+            <div>
+              <div class="code">5210 / 5210.T</div>
+              <h2>日本山村硝子</h2>
+              <div class="sub">スタンダード（内国株式）｜ガラス・土石製品｜-</div>
+            </div>
+            <div class="badge">A:本命候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>125.00</strong></div>
+            <div><span>加点</span><strong>145.00</strong></div>
+            <div><span>危険減点</span><strong>20.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>3,160.00</b></div>
+            <div><span>配当利回り</span><b>4.75%</b></div>
+            <div><span>PER</span><b>9.75</b></div>
+            <div><span>PBR</span><b>0.58</b></div>
+            <div><span>PER×PBR</span><b>5.64</b></div>
+            <div><span>EV/EBITDA</span><b>5.86</b></div>
+            <div><span>25日乖離</span><b>9.17%</b></div>
+            <div><span>52週高値</span><b>4,020.00</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>高配当4.5%以上</li><li>PER10倍以下で割安</li><li>PBR1倍以下</li><li>PER×PBRが15以下</li><li>EV</li><li>EBITDA10倍以下</li><li>52週高値から20%以上下落</li><li>52週安値から反発</li><li>⚠売上減少</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-a">
+          <div class="topline">
+            <div>
+              <div class="code">1928 / 1928.T</div>
+              <h2>積水ハウス</h2>
+              <div class="sub">プライム（内国株式）｜建設業｜TOPIX Large70</div>
+            </div>
+            <div class="badge">A:本命候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>120.00</strong></div>
+            <div><span>加点</span><strong>120.00</strong></div>
+            <div><span>危険減点</span><strong>0.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>3,455.00</b></div>
+            <div><span>配当利回り</span><b>4.23%</b></div>
+            <div><span>PER</span><b>9.65</b></div>
+            <div><span>PBR</span><b>1.05</b></div>
+            <div><span>PER×PBR</span><b>10.10</b></div>
+            <div><span>EV/EBITDA</span><b>9.64</b></div>
+            <div><span>25日乖離</span><b>-1.99%</b></div>
+            <div><span>52週高値</span><b>3,826.00</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>高配当3.5%以上</li><li>PER10倍以下で割安</li><li>PER×PBRが15以下</li><li>EV</li><li>EBITDA10倍以下</li><li>時価総額1000億円以上</li><li>25日線下回りで押し目</li><li>75日線下回り</li><li>52週安値から反発</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-a">
+          <div class="topline">
+            <div>
+              <div class="code">6902 / 6902.T</div>
+              <h2>デンソー</h2>
+              <div class="sub">プライム（内国株式）｜輸送用機器｜TOPIX Large70</div>
+            </div>
+            <div class="badge">A:本命候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>110.00</strong></div>
+            <div><span>加点</span><strong>130.00</strong></div>
+            <div><span>危険減点</span><strong>20.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>1,846.50</b></div>
+            <div><span>配当利回り</span><b>4.01%</b></div>
+            <div><span>PER</span><b>11.32</b></div>
+            <div><span>PBR</span><b>0.94</b></div>
+            <div><span>PER×PBR</span><b>10.64</b></div>
+            <div><span>EV/EBITDA</span><b>5.90</b></div>
+            <div><span>25日乖離</span><b>-3.93%</b></div>
+            <div><span>52週高値</span><b>2,315.00</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>高配当3.5%以上</li><li>PBR1倍以下</li><li>PER×PBRが15以下</li><li>EV</li><li>EBITDA10倍以下</li><li>時価総額1000億円以上</li><li>25日線下回りで押し目</li><li>75日線下回り</li><li>⚠下落トレンド強い</li><li>52週高値から20%以上下落</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-a">
+          <div class="topline">
+            <div>
+              <div class="code">2733 / 2733.T</div>
+              <h2>あらた</h2>
+              <div class="sub">プライム（内国株式）｜卸売業｜TOPIX Small 1</div>
+            </div>
+            <div class="badge">A:本命候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>105.00</strong></div>
+            <div><span>加点</span><strong>125.00</strong></div>
+            <div><span>危険減点</span><strong>20.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>2,784.00</b></div>
+            <div><span>配当利回り</span><b>4.02%</b></div>
+            <div><span>PER</span><b>9.70</b></div>
+            <div><span>PBR</span><b>0.76</b></div>
+            <div><span>PER×PBR</span><b>7.40</b></div>
+            <div><span>EV/EBITDA</span><b>6.23</b></div>
+            <div><span>25日乖離</span><b>-4.61%</b></div>
+            <div><span>52週高値</span><b>3,360.00</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>高配当3.5%以上</li><li>PER10倍以下で割安</li><li>PBR1倍以下</li><li>PER×PBRが15以下</li><li>EV</li><li>EBITDA10倍以下</li><li>25日線下回りで押し目</li><li>75日線下回り</li><li>⚠利益減少</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-a">
+          <div class="topline">
+            <div>
+              <div class="code">1879 / 1879.T</div>
+              <h2>新日本建設</h2>
+              <div class="sub">プライム（内国株式）｜建設業｜TOPIX Small 2</div>
+            </div>
+            <div class="badge">A:本命候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>105.00</strong></div>
+            <div><span>加点</span><strong>105.00</strong></div>
+            <div><span>危険減点</span><strong>0.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>1,974.00</b></div>
+            <div><span>配当利回り</span><b>2.94%</b></div>
+            <div><span>PER</span><b>8.46</b></div>
+            <div><span>PBR</span><b>0.91</b></div>
+            <div><span>PER×PBR</span><b>7.70</b></div>
+            <div><span>EV/EBITDA</span><b>2.62</b></div>
+            <div><span>25日乖離</span><b>0.45%</b></div>
+            <div><span>52週高値</span><b>2,201.00</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>PER10倍以下で割安</li><li>PBR1倍以下</li><li>PER×PBRが15以下</li><li>EV</li><li>EBITDA10倍以下</li><li>時価総額1000億円以上</li><li>75日線下回り</li><li>52週安値から反発</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-a">
+          <div class="topline">
+            <div>
+              <div class="code">4205 / 4205.T</div>
+              <h2>日本ゼオン</h2>
+              <div class="sub">プライム（内国株式）｜化学｜TOPIX Mid400</div>
+            </div>
+            <div class="badge">A:本命候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>90.00</strong></div>
+            <div><span>加点</span><strong>110.00</strong></div>
+            <div><span>危険減点</span><strong>20.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>1,833.00</b></div>
+            <div><span>配当利回り</span><b>3.93%</b></div>
+            <div><span>PER</span><b>10.04</b></div>
+            <div><span>PBR</span><b>0.97</b></div>
+            <div><span>PER×PBR</span><b>9.73</b></div>
+            <div><span>EV/EBITDA</span><b>4.96</b></div>
+            <div><span>25日乖離</span><b>2.04%</b></div>
+            <div><span>52週高値</span><b>2,141.00</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>高配当3.5%以上</li><li>PBR1倍以下</li><li>PER×PBRが15以下</li><li>EV</li><li>EBITDA10倍以下</li><li>時価総額1000億円以上</li><li>75日線下回り</li><li>52週安値から反発</li><li>⚠利益減少</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-a">
+          <div class="topline">
+            <div>
+              <div class="code">7516 / 7516.T</div>
+              <h2>コーナン商事</h2>
+              <div class="sub">プライム（内国株式）｜小売業｜TOPIX Small 1</div>
+            </div>
+            <div class="badge">A:本命候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>90.00</strong></div>
+            <div><span>加点</span><strong>110.00</strong></div>
+            <div><span>危険減点</span><strong>20.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>4,070.00</b></div>
+            <div><span>配当利回り</span><b>3.44%</b></div>
+            <div><span>PER</span><b>9.42</b></div>
+            <div><span>PBR</span><b>0.66</b></div>
+            <div><span>PER×PBR</span><b>6.23</b></div>
+            <div><span>EV/EBITDA</span><b>7.61</b></div>
+            <div><span>25日乖離</span><b>-3.46%</b></div>
+            <div><span>52週高値</span><b>4,525.00</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>PER10倍以下で割安</li><li>PBR1倍以下</li><li>PER×PBRが15以下</li><li>EV</li><li>EBITDA10倍以下</li><li>時価総額1000億円以上</li><li>25日線下回りで押し目</li><li>75日線下回り</li><li>52週安値から反発</li><li>⚠利益減少</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-b">
+          <div class="topline">
+            <div>
+              <div class="code">2181 / 2181.T</div>
+              <h2>パーソルホールディングス</h2>
+              <div class="sub">プライム（内国株式）｜サービス業｜TOPIX Mid400</div>
+            </div>
+            <div class="badge">B:強い候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>85.00</strong></div>
+            <div><span>加点</span><strong>85.00</strong></div>
+            <div><span>危険減点</span><strong>0.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>240.20</b></div>
+            <div><span>配当利回り</span><b>4.58%</b></div>
+            <div><span>PER</span><b>13.85</b></div>
+            <div><span>PBR</span><b>2.58</b></div>
+            <div><span>PER×PBR</span><b>35.69</b></div>
+            <div><span>EV/EBITDA</span><b>5.70</b></div>
+            <div><span>25日乖離</span><b>1.49%</b></div>
+            <div><span>52週高値</span><b>305.40</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>高配当4.5%以上</li><li>EV</li><li>EBITDA10倍以下</li><li>時価総額1000億円以上</li><li>75日線下回り</li><li>52週高値から20%以上下落</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-b">
+          <div class="topline">
+            <div>
+              <div class="code">1925 / 1925.T</div>
+              <h2>大和ハウス工業</h2>
+              <div class="sub">プライム（内国株式）｜建設業｜TOPIX Large70</div>
+            </div>
+            <div class="badge">B:強い候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>85.00</strong></div>
+            <div><span>加点</span><strong>85.00</strong></div>
+            <div><span>危険減点</span><strong>0.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>4,876.00</b></div>
+            <div><span>配当利回り</span><b>3.38%</b></div>
+            <div><span>PER</span><b>9.91</b></div>
+            <div><span>PBR</span><b>1.11</b></div>
+            <div><span>PER×PBR</span><b>10.98</b></div>
+            <div><span>EV/EBITDA</span><b>8.44</b></div>
+            <div><span>25日乖離</span><b>-1.26%</b></div>
+            <div><span>52週高値</span><b>5,710.00</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>PER10倍以下で割安</li><li>PER×PBRが15以下</li><li>EV</li><li>EBITDA10倍以下</li><li>時価総額1000億円以上</li><li>25日線下回りで押し目</li><li>75日線下回り</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-b">
+          <div class="topline">
+            <div>
+              <div class="code">9831 / 9831.T</div>
+              <h2>ヤマダホールディングス</h2>
+              <div class="sub">プライム（内国株式）｜小売業｜TOPIX Mid400</div>
+            </div>
+            <div class="badge">B:強い候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>85.00</strong></div>
+            <div><span>加点</span><strong>85.00</strong></div>
+            <div><span>危険減点</span><strong>0.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>522.80</b></div>
+            <div><span>配当利回り</span><b>3.25%</b></div>
+            <div><span>PER</span><b>13.46</b></div>
+            <div><span>PBR</span><b>0.54</b></div>
+            <div><span>PER×PBR</span><b>7.28</b></div>
+            <div><span>EV/EBITDA</span><b>9.70</b></div>
+            <div><span>25日乖離</span><b>-2.60%</b></div>
+            <div><span>52週高値</span><b>580.60</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>PBR1倍以下</li><li>PER×PBRが15以下</li><li>EV</li><li>EBITDA10倍以下</li><li>時価総額1000億円以上</li><li>25日線下回りで押し目</li><li>75日線下回り</li><li>52週安値から反発</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-b">
+          <div class="topline">
+            <div>
+              <div class="code">8424 / 8424.T</div>
+              <h2>芙蓉総合リース</h2>
+              <div class="sub">プライム（内国株式）｜その他金融業｜TOPIX Mid400</div>
+            </div>
+            <div class="badge">B:強い候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>80.00</strong></div>
+            <div><span>加点</span><strong>95.00</strong></div>
+            <div><span>危険減点</span><strong>15.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>4,350.00</b></div>
+            <div><span>配当利回り</span><b>3.63%</b></div>
+            <div><span>PER</span><b>14.51</b></div>
+            <div><span>PBR</span><b>0.82</b></div>
+            <div><span>PER×PBR</span><b>11.93</b></div>
+            <div><span>EV/EBITDA</span><b>53.56</b></div>
+            <div><span>25日乖離</span><b>0.40%</b></div>
+            <div><span>52週高値</span><b>4,646.00</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>高配当3.5%以上</li><li>PBR1倍以下</li><li>PER×PBRが15以下</li><li>時価総額1000億円以上</li><li>75日線下回り</li><li>52週安値から反発</li><li>⚠負債比率高い</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-b">
+          <div class="topline">
+            <div>
+              <div class="code">8425 / 8425.T</div>
+              <h2>みずほリース</h2>
+              <div class="sub">プライム（内国株式）｜その他金融業｜TOPIX Small 1</div>
+            </div>
+            <div class="badge">B:強い候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>75.00</strong></div>
+            <div><span>加点</span><strong>90.00</strong></div>
+            <div><span>危険減点</span><strong>15.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>1,444.00</b></div>
+            <div><span>配当利回り</span><b>3.46%</b></div>
+            <div><span>PER</span><b>8.94</b></div>
+            <div><span>PBR</span><b>0.98</b></div>
+            <div><span>PER×PBR</span><b>8.75</b></div>
+            <div><span>EV/EBITDA</span><b>53.91</b></div>
+            <div><span>25日乖離</span><b>1.32%</b></div>
+            <div><span>52週高値</span><b>1,542.00</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>PER10倍以下で割安</li><li>PBR1倍以下</li><li>PER×PBRが15以下</li><li>時価総額1000億円以上</li><li>75日線下回り</li><li>52週安値から反発</li><li>⚠負債比率高い</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-b">
+          <div class="topline">
+            <div>
+              <div class="code">7181 / 7181.T</div>
+              <h2>かんぽ生命保険</h2>
+              <div class="sub">プライム（内国株式）｜保険業｜TOPIX Mid400</div>
+            </div>
+            <div class="badge">B:強い候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>75.00</strong></div>
+            <div><span>加点</span><strong>75.00</strong></div>
+            <div><span>危険減点</span><strong>0.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>1,525.50</b></div>
+            <div><span>配当利回り</span><b>2.71%</b></div>
+            <div><span>PER</span><b>10.89</b></div>
+            <div><span>PBR</span><b>0.40</b></div>
+            <div><span>PER×PBR</span><b>4.40</b></div>
+            <div><span>EV/EBITDA</span><b>31.79</b></div>
+            <div><span>25日乖離</span><b>-3.90%</b></div>
+            <div><span>52週高値</span><b>1,763.33</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>PBR1倍以下</li><li>PER×PBRが15以下</li><li>時価総額1000億円以上</li><li>25日線下回りで押し目</li><li>75日線下回り</li><li>52週安値から反発</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-b">
+          <div class="topline">
+            <div>
+              <div class="code">4208 / 4208.T</div>
+              <h2>ＵＢＥ</h2>
+              <div class="sub">プライム（内国株式）｜化学｜TOPIX Mid400</div>
+            </div>
+            <div class="badge">B:強い候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>70.00</strong></div>
+            <div><span>加点</span><strong>90.00</strong></div>
+            <div><span>危険減点</span><strong>20.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>2,391.00</b></div>
+            <div><span>配当利回り</span><b>4.60%</b></div>
+            <div><span>PER</span><b>40.32</b></div>
+            <div><span>PBR</span><b>0.55</b></div>
+            <div><span>PER×PBR</span><b>22.05</b></div>
+            <div><span>EV/EBITDA</span><b>11.12</b></div>
+            <div><span>25日乖離</span><b>-1.91%</b></div>
+            <div><span>52週高値</span><b>2,896.50</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>高配当4.5%以上</li><li>PBR1倍以下</li><li>時価総額1000億円以上</li><li>25日線下回りで押し目</li><li>75日線下回り</li><li>52週安値から反発</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-b">
+          <div class="topline">
+            <div>
+              <div class="code">3231 / 3231.T</div>
+              <h2>野村不動産ホールディングス</h2>
+              <div class="sub">プライム（内国株式）｜不動産業｜TOPIX Mid400</div>
+            </div>
+            <div class="badge">B:強い候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>70.00</strong></div>
+            <div><span>加点</span><strong>85.00</strong></div>
+            <div><span>危険減点</span><strong>15.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>1,002.00</b></div>
+            <div><span>配当利回り</span><b>4.39%</b></div>
+            <div><span>PER</span><b>10.36</b></div>
+            <div><span>PBR</span><b>1.07</b></div>
+            <div><span>PER×PBR</span><b>11.07</b></div>
+            <div><span>EV/EBITDA</span><b>13.64</b></div>
+            <div><span>25日乖離</span><b>-2.87%</b></div>
+            <div><span>52週高値</span><b>1,162.50</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>高配当3.5%以上</li><li>PER×PBRが15以下</li><li>時価総額1000億円以上</li><li>25日線下回りで押し目</li><li>75日線下回り</li><li>52週安値から反発</li><li>⚠負債比率高い</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-b">
+          <div class="topline">
+            <div>
+              <div class="code">8725 / 8725.T</div>
+              <h2>ＭＳ＆ＡＤインシュアランスグループホールディングス</h2>
+              <div class="sub">プライム（内国株式）｜保険業｜TOPIX Large70</div>
+            </div>
+            <div class="badge">B:強い候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>70.00</strong></div>
+            <div><span>加点</span><strong>90.00</strong></div>
+            <div><span>危険減点</span><strong>20.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>4,019.00</b></div>
+            <div><span>配当利回り</span><b>2.99%</b></div>
+            <div><span>PER</span><b>8.33</b></div>
+            <div><span>PBR</span><b>1.29</b></div>
+            <div><span>PER×PBR</span><b>10.72</b></div>
+            <div><span>EV/EBITDA</span><b>4.10</b></div>
+            <div><span>25日乖離</span><b>-1.37%</b></div>
+            <div><span>52週高値</span><b>4,376.00</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>PER10倍以下で割安</li><li>PER×PBRが15以下</li><li>EV</li><li>EBITDA10倍以下</li><li>時価総額1000億円以上</li><li>25日線下回りで押し目</li><li>75日線下回り</li><li>52週安値から反発</li><li>⚠売上減少</li></ul>
+          </div>
+        </section>
+        
+        <section class="card rank-b">
+          <div class="topline">
+            <div>
+              <div class="code">8630 / 8630.T</div>
+              <h2>ＳＯＭＰＯホールディングス</h2>
+              <div class="sub">プライム（内国株式）｜保険業｜TOPIX Large70</div>
+            </div>
+            <div class="badge">B:強い候補</div>
+          </div>
+
+          <div class="scorebox">
+            <div><span>総合スコア</span><strong>70.00</strong></div>
+            <div><span>加点</span><strong>70.00</strong></div>
+            <div><span>危険減点</span><strong>0.00</strong></div>
+          </div>
+
+          <div class="grid">
+            <div><span>株価</span><b>5,771.00</b></div>
+            <div><span>配当利回り</span><b>2.60%</b></div>
+            <div><span>PER</span><b>12.68</b></div>
+            <div><span>PBR</span><b>1.04</b></div>
+            <div><span>PER×PBR</span><b>13.18</b></div>
+            <div><span>EV/EBITDA</span><b>4.32</b></div>
+            <div><span>25日乖離</span><b>-3.29%</b></div>
+            <div><span>52週高値</span><b>6,262.00</b></div>
+          </div>
+
+          <div class="reason">
+            <h3>理由・注意点</h3>
+            <ul><li>PER×PBRが15以下</li><li>EV</li><li>EBITDA10倍以下</li><li>時価総額1000億円以上</li><li>25日線下回りで押し目</li><li>75日線下回り</li><li>52週安値から反発</li></ul>
+          </div>
+        </section>
+        
+  </main>
+</body>
+</html>
