@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # 日本時間 7:00 = UTC 22:00
-    - cron: "0 22 * * *"
+    - cron: "0 3 * * *"
 
 permissions:
   contents: write
