@@ -255,8 +255,40 @@ def judge(score_value):
         return "D:見送り"
 
 
+
+def prepare_numeric_columns(df):
+    """スコア計算で使う列をすべて安全に数値化する"""
+    numeric_cols = [
+        "株価",
+        "5日線カイリ率(％)",
+        "25日線カイリ率(％)",
+        "75日線カイリ率(％)",
+        "200日線カイリ率(％)",
+        "52週高値",
+        "52週安値",
+        "配当利回り_%",
+        "予想年間配当",
+        "PER\n（10倍以下）",
+        "PBR\n（1.0倍以下）",
+        "PER×PBR\n（15倍以下）",
+        "EV/EBITDA（10倍以下）",
+        "時価総額\n(百万円)",
+        "時価総額_億円",
+        "売上成長率_%",
+        "利益成長率_%",
+        "負債比率_%",
+    ]
+
+    for col in numeric_cols:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+
+    return df
+
 def score(df):
     """スコアと判定を作成"""
+    df = prepare_numeric_columns(df)
+
     df["スコア"] = 0
     df["危険減点"] = 0
 
