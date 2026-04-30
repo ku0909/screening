@@ -28,7 +28,7 @@ jobs:
 
       - name: Run screener
         run: |
-          python yfinance_screener_prime_plus_sample.py
+          python yfinance_screener_prime_plus_sample_registered.py
 
       - name: Commit result
         run: |
