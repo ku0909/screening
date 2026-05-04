@@ -2,8 +2,8 @@ name: Run Stock Screener
 
 on:
   schedule:
-    # 日本時間 11:30 = UTC 02:30
-    - cron: "30 2 * * *"
+    # 日本時間 10:47 = UTC 01:47
+    - cron: "47 1 * * *"
   workflow_dispatch:
 
 permissions:
