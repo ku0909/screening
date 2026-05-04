@@ -572,6 +572,16 @@ def make_html_report(df, output=OUTPUT_HTML):
         def data_num(v):
             return "" if pd.isna(v) else str(float(v))
 
+        # f-string内で改行入り列名を直接使うとSyntaxErrorになるため、先に変数化する
+        per_data = data_num(r.get("PER\n（10倍以下）"))
+        pbr_data = data_num(r.get("PBR\n（1.0倍以下）"))
+        perpbr_data = data_num(r.get("PER×PBR\n（15倍以下）"))
+        ev_data = data_num(r.get("EV/EBITDA（10倍以下）"))
+        marketcap_data = data_num(r.get("時価総額\n(百万円)"))
+        dev25_data = data_num(r.get("25日線カイリ率(％)"))
+        dev75_data = data_num(r.get("75日線カイリ率(％)"))
+        risk_data = data_num(r.get("危険減点"))
+
         link_buttons = make_link_buttons(code)
         detail_table = make_detail_table(r, detail_columns)
 
@@ -586,14 +596,14 @@ def make_html_report(df, output=OUTPUT_HTML):
           data-yield="{data_num(r.get('配当利回り_%'))}"
           data-price="{data_num(r.get('株価'))}"
           data-dividend="{data_num(r.get('年間配当_yfinance'))}"
-          data-per="{data_num(r.get('PER\n（10倍以下）'))}"
-          data-pbr="{data_num(r.get('PBR\n（1.0倍以下）'))}"
-          data-perpbr="{data_num(r.get('PER×PBR\n（15倍以下）'))}"
-          data-ev="{data_num(r.get('EV/EBITDA（10倍以下）'))}"
-          data-marketcap="{data_num(r.get('時価総額\n(百万円)'))}"
-          data-dev25="{data_num(r.get('25日線カイリ率(％)'))}"
-          data-dev75="{data_num(r.get('75日線カイリ率(％)'))}"
-          data-risk="{data_num(r.get('危険減点'))}"
+          data-per="{per_data}"
+          data-pbr="{pbr_data}"
+          data-perpbr="{perpbr_data}"
+          data-ev="{ev_data}"
+          data-marketcap="{marketcap_data}"
+          data-dev25="{dev25_data}"
+          data-dev75="{dev75_data}"
+          data-risk="{risk_data}"
           data-verdict="{html.escape(verdict)}"
           data-source="{html.escape(registered_label)}"
           data-text="{html.escape(text_for_search)}"
